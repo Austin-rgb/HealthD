@@ -1,0 +1,6 @@
+create table sessions(sessionId string primary key,email string, logfile string);
+create table patients(email string primary key,password string);
+create table profiles(email string primary,firstname string,lastname string,date_of_birth date,picture string);
+create table datapool(owner string, author string, category string,description string, upload_date date,upload_time time);
+create table doctors(email string primary key, license string);
+create table researchers(email string primary key, institution string);
